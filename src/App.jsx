@@ -18,11 +18,11 @@ export default function App() {
   
   const addTodo = (text) => {
     const newTodo = {
-      id: crypto.randomUUID(), // Generates a unique secure ID string
+      id: crypto.randomUUID(), 
       text: text,
       completed: false,
     };
-    setTodos([newTodo, ...todos]); // Adds the new item to the top of the list
+    setTodos([newTodo, ...todos]); 
   };
 
   

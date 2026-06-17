@@ -4,11 +4,11 @@ export default function TodoForm({ addTodo }) {
   const [input, setInput] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevents full-page browser reload
-    if (!input.trim()) return; // Ignored if the input is empty or just spaces
+    e.preventDefault(); 
+    if (!input.trim()) return; 
 
-    addTodo(input); // Passes the text back up to App.jsx
-    setInput("");   // Resets the input field
+    addTodo(input); 
+    setInput("");   
   };
 
   return (
